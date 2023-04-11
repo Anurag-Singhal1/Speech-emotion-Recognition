@@ -1,0 +1,25 @@
+{% extends 'basic.html' %}
+{% block title %}ABOUT{% endblock title %}
+{% block body %}
+{% load static %}
+<h1 class='Heading_pages'>ABOUT THE PROJECT</h1>
+<div class="mainsection">
+<div class="content_area">
+    <ul>
+    <li>Speech Emotion Recognition, abbreviated as SER, is the act of attempting to recognize human emotion and affective states from speech. This is capitalizing on the fact that voice often reflects underlying emotion through tone and pitch. This is also the phenomenon that animals like dogs and horses employ to be able to understand human emotion.</li>
+    <li>SER is tough because emotions are subjective and annotating audio is challenging</li>
+</ul>
+</div>
+
+<div class="content_area">
+    <p>In this project, we will use the libraries librosa, soundfile, and sklearn to build a model using an <strong> MLPClassifier</strong>. This will be able to recognize emotion from sound files. We will load the data, extract features from it, then split the dataset into training and testing sets. Then, we’ll initialize an MLPClassifier and train the model. Finally, we’ll calculate the accuracy of our model</p>
+</div>
+
+</div>
+
+<div class="img_area">
+    <img src="{% static  'images/sysarchdes.jpg' %}" class='imgcontent'>
+</div>
+
+{% endblock body %}
+

@@ -1,0 +1,49 @@
+{% extends 'basic.html' %}
+{% block title %}TEAM{% endblock title %}
+{% block body %}
+{% load static %}
+
+<h1 class='Heading_pages'>TEAM MEMBERS</h1>
+<br>
+<br>
+<div class="container_teams">
+<div class="boxcard">
+    <div class="front">
+        <img src='https://images.unsplash.com/photo-1639074784901-da4eef89268b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=695&q=80'>
+    </div>
+    <div class="back">
+        <h1>Prashant Mishra</h1>
+        <p>Contribution in the Project: Merging Webpages and Machine Learning Models</p>
+    </div>
+</div>
+<div class="boxcard">
+    <div class="front">
+        <img src="{% static  'images/kamal.jpg' %}" class='photos'>
+    </div>
+    <div class="back">
+        <h1>Kamal</h1>
+        <p>Contribution in the Project: Data Collection</p>
+    </div>
+</div>
+<div class="boxcard">
+    <div class="front">
+        <img src="{% static  'images/sheersh.jpg' %}" class='photos'>
+    </div>
+    <div class="back">
+        <h1>Sheersh Rathi</h1>
+        <p>Contribution in the Project: Creating Webpages</p>
+    </div>
+</div>
+<div class="boxcard">
+    <div class="front">
+        <img src="{% static  'images/anurag.jpg' %}" class='photos'>
+    </div>
+    <div class="back">
+        <h1>Anurag Singhal</h1>
+        <p>Contribution in the Project: Creation of Machine Learning Model</p>
+    </div>
+</div>
+</div>
+
+{% endblock body %}
+

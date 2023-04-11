@@ -1,0 +1,20 @@
+{% extends 'basic.html' %}
+{% block title %}HOME{% endblock title %}
+{% block body %}
+<h1 style='color:blue'>Speech Emotion Recogintion</h1>
+<div class="content_audio">
+<form action="/" method="post" enctype='multipart/form-data'>
+    {% csrf_token %}
+Upload Your audio file: <input type="file" name='audiofile'>
+<br>
+<button type="submit" style='float: right'>Start Analyzing</button>
+</form>
+{% if messages %}
+{% for message in messages %}
+ {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+{% endfor %}
+{% endif %}
+{{result}}
+</div>
+{% endblock body %}
+

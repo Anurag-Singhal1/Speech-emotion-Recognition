@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %} | SER</title>
+    {% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="nav-area">
+      <span class='projecttitle'>Speech Emotion Recognition</span>
+        <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/teams">Meet the Team</a></li>
+      <li><a href="/developers">Sources and Developers</a></li>
+      </ul>
+      </div>
+    {% block body %}
+
+    {% endblock body %}
+    <div class="footer">
+      Created by : RoboFriends <br>VIT BHOPAL
+  </div>
+</html>
