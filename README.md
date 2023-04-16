@@ -4,7 +4,7 @@
 
 User need to upload audio files to get the Emotion from the AUDIO.
 
-Project Done by using MLPClassifier.
+Project done by using MLPClassifier.
 
 Web Interface is done by DJANGO library of the Python.
 
